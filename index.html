@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Student Task Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>My Student Task Planner</h1>
+
+  <p>Welcome! Let's organize our day.</p>
+
+  <h2>My Tasks</h2>
+
+  <input type="text" id="taskInput" placeholder="Enter your task">
+  <input type="date" id="dueDate">
+
+  <select id="taskPriority">
+    <option value="High">High Priority</option>
+    <option value="Medium" selected>Medium Priority</option>
+    <option value="Low">Low Priority</option>
+  </select>
+
+  <button id="addBtn">Add Task</button>
+
+  <div id="taskStats">
+    <p>Total Tasks: <span id="total">0</span></p>
+    <p>Completed: <span id="completed">0</span></p>
+    <p>Pending: <span id="pending">0</span></p>
+  </div>
+
+  <div id="taskList"></div>
+</body>
+</html>
